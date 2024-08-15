@@ -5,18 +5,19 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
 
-class G_Login_Activity : AppCompatActivity() {
+
+class G_Login_Activity : Fragment() {
 
     // 앱 데이터 저장 (아이디 저장, 비밀번호 입력 횟수 저장 활용)
     private lateinit var sharedPreferences: SharedPreferences
@@ -25,22 +26,24 @@ class G_Login_Activity : AppCompatActivity() {
     private val MAX_ATTEMPTS = 5 // 비밀번호 입력 최대 횟수
     private var attemptCount = 0 // 비밀번호 입력 횟수 초기화
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_glogin)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.activity_glogin, container, false)
 
         // SharedPreferences 및 Editor 초기화
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+        sharedPreferences = requireActivity().getSharedPreferences("MyPrefs", AppCompatActivity.MODE_PRIVATE)
         editor = sharedPreferences.edit()
 
 
-        val idEdit = findViewById<EditText>(R.id.idEdit)
-        val pwEdit = findViewById<EditText>(R.id.pwEdit)
-        val idCheck = findViewById<CheckBox>(R.id.idChectBox)
-        val idSave = findViewById<TextView>(R.id.idFind)
-        val pwSave = findViewById<TextView>(R.id.pwFind)
-        val loginButton = findViewById<Button>(R.id.g_login_button)
+        val idEdit = view.findViewById<EditText>(R.id.idEdit)
+        val pwEdit = view.findViewById<EditText>(R.id.pwEdit)
+        val idCheck = view.findViewById<CheckBox>(R.id.idCheckBox)
+        val idSave = view.findViewById<TextView>(R.id.idFind)
+        val pwSave = view.findViewById<TextView>(R.id.pwFind)
+        val signButton = view.findViewById<TextView>(R.id.signText)
+        val loginButton = view.findViewById<Button>(R.id.g_login_button)
 
         // 아이디 입력 필드
         // 텍스트가 변경될 때마다 동적으로 변경
@@ -99,25 +102,33 @@ class G_Login_Activity : AppCompatActivity() {
 
         // 아이디 찾기 화면 전환
         idSave.setOnClickListener {
-            val intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(requireActivity(), StartActivity::class.java)
             startActivity(intent)
         }
 
         // 비밀번호 찾기 화면 전환
         pwSave.setOnClickListener {
-            val intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(requireActivity(), StartActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 회원가입 화면 전환
+        signButton.setOnClickListener {
+            val intent = Intent(requireActivity(), SignSelectActivity::class.java)
             startActivity(intent)
         }
 
         // 로그인 화면 전환
         loginButton.setOnClickListener {
-            var intent = Intent(this, StartActivity::class.java)
+            var intent = Intent(requireActivity(), StartActivity::class.java)
             startActivity(intent)
 //            showAlert()
         }
 
         // 로그인 접속 기능
 
+
+        return view
 
     }
 
@@ -126,7 +137,7 @@ class G_Login_Activity : AppCompatActivity() {
     // 알럿 함수
     private fun showAlert() {
         // AlertDialog 빌더 생성
-        val builder = AlertDialog.Builder(this)
+        val builder = AlertDialog.Builder(requireActivity())
         builder.setTitle("비밀번호 입력 횟수 초과")
         builder.setMessage("비밀번호가 여러 번 잘못 입력되었어요.\n비밀번호 찾기 후 진행해주세요.")
         builder.setPositiveButton("확인") { dialog, _ ->

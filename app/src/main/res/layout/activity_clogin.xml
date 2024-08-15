@@ -5,63 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".C_Login_Activity">
+    tools:context=".G_Login_Activity">
 
     <TextView
-        android:id="@+id/back_button"
+        android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
-        android:text="〈     로그인"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
         android:text="기업회원으로 로그인"
         android:textColor="#061720"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_button"
+        tools:layout_editor_absoluteY="137dp"
         tools:ignore="MissingConstraints" />
+
 
     <EditText
         android:id="@+id/idEdit"
         android:layout_width="329dp"
         android:layout_height="68dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="아이디를 입력해주세요"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/loginTitle" />
 
     <EditText
         android:id="@+id/pwEdit"
         android:layout_width="329dp"
         android:layout_height="68dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextView" />
-
+        app:layout_constraintTop_toBottomOf="@+id/idEdit" />
 
     <CheckBox
-        android:id="@+id/idChectBox"
+        android:id="@+id/idCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -79,11 +66,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="102dp"
+        android:layout_marginEnd="116dp"
         android:text="아이디 찾기"
         app:layout_constraintEnd_toEndOf="@+id/g_login_button"
         app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="@+id/TextView"
         app:layout_constraintTop_toBottomOf="@+id/pwEdit" />
 
     <TextView
@@ -99,7 +85,7 @@
         android:id="@+id/pwFind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="4dp"
         android:text="비밀번호 찾기"
         app:layout_constraintBaseline_toBaselineOf="@+id/dummyText"
         app:layout_constraintStart_toEndOf="@+id/dummyText" />
@@ -108,7 +94,7 @@
         android:id="@+id/signText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="96dp"
         android:lineHeight="19.5sp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
