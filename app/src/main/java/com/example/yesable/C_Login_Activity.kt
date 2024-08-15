@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class G_Login_Activity : AppCompatActivity() {
+class C_Login_Activity : AppCompatActivity() {
 
     // 앱 데이터 저장 (아이디 저장, 비밀번호 입력 횟수 저장 활용)
     private lateinit var sharedPreferences: SharedPreferences
@@ -28,7 +28,7 @@ class G_Login_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_glogin)
+        setContentView(R.layout.activity_clogin)
 
         // SharedPreferences 및 Editor 초기화
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)

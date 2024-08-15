@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.121"
         tools:src="@drawable/logo" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         tools:src="@drawable/button_naver" />
 
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/titleView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.377"
         tools:src="@drawable/button_google" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/sign_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
