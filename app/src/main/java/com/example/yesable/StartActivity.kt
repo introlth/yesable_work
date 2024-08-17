@@ -30,7 +30,7 @@ class StartActivity : ComponentActivity() {
         // yesable 로그인 버튼 화면 전환 -> 로그인 화면 이동
         val g_login_button = findViewById<TextView>(R.id.g_login_button)
         g_login_button.setOnClickListener {
-            val intent = Intent(this, SignSelectActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

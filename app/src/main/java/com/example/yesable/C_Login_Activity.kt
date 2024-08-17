@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 
-class G_Login_Activity : Fragment() {
+class C_Login_Activity : Fragment() {
 
     // 앱 데이터 저장 (아이디 저장, 비밀번호 입력 횟수 저장 활용)
     private lateinit var sharedPreferences: SharedPreferences
@@ -30,7 +30,7 @@ class G_Login_Activity : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.activity_glogin, container, false)
+        val view = inflater.inflate(R.layout.activity_clogin, container, false)
 
         // SharedPreferences 및 Editor 초기화
         sharedPreferences = requireActivity().getSharedPreferences("MyPrefs", AppCompatActivity.MODE_PRIVATE)
@@ -117,6 +117,7 @@ class G_Login_Activity : Fragment() {
             val intent = Intent(requireActivity(), SignSelectActivity::class.java)
             startActivity(intent)
         }
+
 
         // 로그인 화면 전환
         loginButton.setOnClickListener {

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white">
 
     <ImageView
@@ -21,7 +20,7 @@
         app:layout_constraintVertical_bias="0.121"
         tools:src="@drawable/logo" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageViewLogo2"
         android:layout_width="53dp"
@@ -47,18 +47,18 @@
         android:src="@drawable/button_naver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377"
+        app:layout_constraintVertical_bias="0.423"
         tools:src="@drawable/button_naver" />
 
-
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/titleView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
+        android:layout_marginBottom="160dp"
         android:fontFamily="sans-serif"
         android:lineHeight="25sp"
         android:paddingStart="16dp"
@@ -66,7 +66,7 @@
         android:text="소셜 계정 로그인"
         android:textAlignment="center"
         android:textColor="#787676"
-        android:textSize="16sp"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -82,13 +82,13 @@
         android:src="@drawable/button_google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377"
+        app:layout_constraintVertical_bias="0.423"
         tools:src="@drawable/button_google" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/sign_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
         android:text="게스트로 시작하기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sign_button"
-        app:layout_constraintVertical_bias="0.164"
+        app:layout_constraintVertical_bias="0.258"
         tools:layout_editor_absoluteX="40dp" />
 
     <android.widget.Button
@@ -129,8 +129,8 @@
         android:text="Yesable 아이디로 로그인"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sign_button"
-        app:layout_constraintVertical_bias="0.654"
-        tools:layout_editor_absoluteX="45dp" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="40dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
