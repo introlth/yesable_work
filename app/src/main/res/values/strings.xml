@@ -15,4 +15,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_sign_select">SignSelectActivity</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="title_activity_onboarding_pager_adapter">OnboardingPagerAdapter</string>
+    <string name="title_activity_onboarding1">OnboardingActivity1</string>
 </resources>

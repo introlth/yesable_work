@@ -81,4 +81,6 @@ dependencies {
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    implementation("androidx.fragment:fragment-ktx:1.3.6")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 }

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import com.example.yesable.ui.login.LoginActivity2
 
 class StartActivity : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
@@ -23,7 +24,7 @@ class StartActivity : ComponentActivity() {
         // 게스트 버튼 화면 전환 -> 일반회원 메인 화면 이동
         val main_button = findViewById<TextView>(R.id.main_button)
         main_button.setOnClickListener {
-            val intent = Intent(this, SignSelectActivity::class.java)
+            val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
         }
 

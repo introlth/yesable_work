@@ -20,7 +20,6 @@
         tools:layout_editor_absoluteY="137dp"
         tools:ignore="MissingConstraints" />
 
-
     <EditText
         android:id="@+id/idEdit"
         android:layout_width="329dp"
