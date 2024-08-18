@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import com.example.yesable.ui.login.LoginActivity2
 
 class StartActivity : ComponentActivity() {
     @SuppressLint("MissingInflatedId")

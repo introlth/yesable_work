@@ -24,7 +24,7 @@ class SignSelectActivity : AppCompatActivity() {
         // 일반회원가입 화면 전환
         val g_sign = findViewById<Button>(R.id.g_sign_button)
         g_sign.setOnClickListener {
-            val intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(this, IndividualMemberRegistrationActivity::class.java)
             startActivity(intent)
         }
 
