@@ -96,15 +96,6 @@
             android:layout_marginBottom="4dp" />
 
         <TextView
-            android:id="@+id/textViewEmailError"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이메일을 입력해주세요."
-            android:textColor="#FF0000"
-            android:textSize="14sp"
-            android:layout_marginBottom="16dp" />
-
-        <TextView
             android:id="@+id/textViewPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

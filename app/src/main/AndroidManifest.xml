@@ -47,6 +47,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".IndividualMemberRegistrationActivity" />
+        <activity android:name=".RegistrationSuccessActivity"/>
+
 
     </application>
 
