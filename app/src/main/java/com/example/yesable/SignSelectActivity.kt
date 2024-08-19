@@ -28,6 +28,7 @@ class SignSelectActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         // 기업회원가입 화면 전환
         val c_sign = findViewById<Button>(R.id.c_sign_button)
         c_sign.setOnClickListener {
