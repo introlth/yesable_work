@@ -121,14 +121,14 @@
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/textViewEmailError"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="이메일을 입력해주세요."
-                android:textColor="#FF0000"
-                android:textSize="14sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/textViewEmailError"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:text="이메일을 입력해주세요."-->
+<!--                android:textColor="#FF0000"-->
+<!--                android:textSize="14sp" />-->
 
             <TextView
                 android:id="@+id/textViewPhone"
