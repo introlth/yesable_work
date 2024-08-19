@@ -21,6 +21,11 @@ class OnboardingFragment : Fragment() {
         val layoutResId = when (pageNumber) {
             0 -> R.layout.fragment_onboarding1
             1 -> R.layout.fragment_onboarding2
+            2 -> R.layout.fragment_onboarding3
+            3 -> R.layout.fragment_onboarding4
+            4 -> R.layout.fragment_onboarding5
+            5 -> R.layout.fragment_onboarding6
+            6 -> R.layout.fragment_onboarding7
             else -> R.layout.fragment_onboarding1
         }
 
@@ -35,10 +40,7 @@ class OnboardingFragment : Fragment() {
 
         obButton.setOnClickListener {
             when (pageNumber) {
-                0 -> {
-                    (activity as? OnboardingActivity)?.viewPager2?.currentItem = pageNumber + 1
-                }
-                in 1..9 -> {
+                in 0..9 -> {
                     (activity as? OnboardingActivity)?.viewPager2?.currentItem = pageNumber + 1
                 }
                 10 -> {

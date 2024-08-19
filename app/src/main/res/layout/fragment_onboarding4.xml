@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnboardingFragment2">
+    tools:context=".OnboardingFragment4">
 
     <TextView
         android:id="@+id/msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
-        android:text="장애 유형을 선택해주세요"
+        android:text="희망 근무지를 선택해주세요"
         android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginTop="168dp"
         android:layout_marginBottom="339dp"
         android:checkable="true"
-        android:text="지체장애"
+        android:text="전체"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -60,7 +60,7 @@
         android:layout_marginTop="168dp"
         android:layout_marginBottom="339dp"
         android:checkable="true"
-        android:text="시각장애"
+        android:text="서귀포시"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -78,7 +78,7 @@
         android:layout_marginStart="268dp"
         android:layout_marginTop="168dp"
         android:checkable="true"
-        android:text="청각장애"
+        android:text="제주시"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"

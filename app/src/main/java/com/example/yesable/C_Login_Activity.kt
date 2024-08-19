@@ -121,7 +121,7 @@ class C_Login_Activity : Fragment() {
 
         // 로그인 화면 전환
         loginButton.setOnClickListener {
-            var intent = Intent(requireActivity(), StartActivity::class.java)
+            val intent = Intent(requireActivity(), OnboardingActivity::class.java)
             startActivity(intent)
 //            showAlert()
         }
