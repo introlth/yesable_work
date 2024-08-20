@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_types">
+        <item>기업 형태를 선택해주세요</item>
+        <item>대기업</item>
+        <item>중소기업</item>
+    </string-array>
+
+    <string-array name="business_areas">
+        <item>사업 분야를 선택해주세요</item>
+        <item>IT</item>
+        <item>제조업</item>
+        <item>농업</item>
+    </string-array>
+</resources>
