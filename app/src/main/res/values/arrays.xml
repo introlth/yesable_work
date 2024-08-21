@@ -12,4 +12,16 @@
         <item>제조업</item>
         <item>농업</item>
     </string-array>
+
+    <string-array name="year_array">
+        <item>취득년도</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <!-- 추가적인 연도 아이템을 여기에 넣으세요 -->
+    </string-array>
 </resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment8">
+
+    <!-- 상단 설명 텍스트 -->
+
+    <!-- 자격증 입력 필드 -->
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="보유하고 있는 자격증을 입력해주세요"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/certificate_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/certificate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자격증"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/certificate_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="자격증명을 입력해주세요."
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/certificate_label" />
+
+            <EditText
+                android:id="@+id/issuing_organization"
+                android:layout_width="227dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/editTextBackground"
+                android:hint="자격증 발행기관"
+                android:inputType="text"
+                android:padding="12dp"
+                app:layout_constraintEnd_toStartOf="@+id/year_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/certificate_name"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="107dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/editTextBackground"
+                android:entries="@array/year_array"
+                android:padding="12dp"
+                style="?android:attr/spinnerStyle"
+
+                app:layout_constraintBottom_toBottomOf="@+id/issuing_organization"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/issuing_organization"
+                app:layout_constraintTop_toTopOf="@+id/issuing_organization"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 자격증 추가 버튼 -->
+
+    <!-- 계속하기 버튼 -->
+
+    <Button
+        android:id="@+id/add_certificate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="+ 자격증 추가"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certificate_card" />
+
+    <android.widget.Button
+        android:id="@+id/ob_button"
+        style="@style/ButtonStyleColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="계속하기"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

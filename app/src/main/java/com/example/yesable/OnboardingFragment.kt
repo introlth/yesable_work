@@ -26,6 +26,7 @@ class OnboardingFragment : Fragment() {
             4 -> R.layout.fragment_onboarding5
             5 -> R.layout.fragment_onboarding6
             6 -> R.layout.fragment_onboarding7
+            7 -> R.layout.fragment_onboarding8 //추가
             else -> R.layout.fragment_onboarding1
         }
 

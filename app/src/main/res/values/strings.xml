@@ -18,4 +18,6 @@
     <string name="title_activity_login2">LoginActivity2</string>
     <string name="title_activity_onboarding_pager_adapter">OnboardingPagerAdapter</string>
     <string name="title_activity_onboarding1">OnboardingActivity1</string>
+    <string name="prompt_year">취득년도</string>
+
 </resources>
