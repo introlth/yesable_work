@@ -24,4 +24,24 @@
         <item>2018</item>
         <!-- 추가적인 연도 아이템을 여기에 넣으세요 -->
     </string-array>
+
+    <!-- 학력 배열 -->
+    <string-array name="degree_array">
+        <item>학력</item>
+        <item>대학교 박사</item>
+        <item>대학교 석사</item>
+        <item>대학교 (4년)</item>
+        <item>대학교 (2,3년)</item>
+        <item>고등학교</item>
+    </string-array>
+
+    <!-- 상태 배열 -->
+    <string-array name="status_array">
+        <item>상태</item>
+        <item>졸업</item>
+        <item>재학</item>
+        <item>휴학</item>
+        <item>중퇴</item>
+        <item>수료</item>
+    </string-array>
 </resources>
