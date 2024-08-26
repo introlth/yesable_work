@@ -29,6 +29,7 @@ class OnboardingFragment : Fragment() {
             6 -> R.layout.fragment_onboarding7
             7 -> R.layout.fragment_onboarding8 //추가
             8 -> R.layout.fragment_onboarding9
+            9 -> R.layout.fragment_onboarding10
             else -> R.layout.fragment_onboarding1
         }
         Log.d("OnboardingFragment", "Inflating layout for page number: $pageNumber")
