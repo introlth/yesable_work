@@ -17,10 +17,7 @@ annotation = "1.6.0"
 lifecycleLivedataKtx = "2.8.4"
 lifecycleViewmodelKtx = "2.8.4"
 carUiLib = "2.6.0"
-<<<<<<< HEAD
 gridlayout = "1.0.0"
-=======
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,10 +43,8 @@ androidx-annotation = { group = "androidx.annotation", name = "annotation", vers
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 car-ui-lib = { group = "com.android.car.ui", name = "car-ui-lib", version.ref = "carUiLib" }
-<<<<<<< HEAD
 androidx-gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "gridlayout" }
-=======
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
