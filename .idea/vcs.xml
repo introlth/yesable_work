@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/yesable_front_login" vcs="Git" />
+=======
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
   </component>
 </project>

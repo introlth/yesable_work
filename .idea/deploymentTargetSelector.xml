@@ -4,15 +4,23 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
+<<<<<<< HEAD
         <DropdownSelection timestamp="2024-08-30T19:58:42.333074800Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\LEGION Y530\.android\avd\Pixel_6_API_34.avd" />
+=======
+        <DropdownSelection timestamp="2024-07-03T14:20:43.322924100Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ej\.android\avd\Pixel_2_API_33.avd" />
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
+<<<<<<< HEAD
       <SelectionState runConfigName="MainActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
@@ -25,6 +33,8 @@
       <SelectionState runConfigName="Apply_List_Activity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+=======
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
     </selectionStates>
   </component>
 </project>
