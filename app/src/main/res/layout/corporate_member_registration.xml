@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorporateMemberRegistrationActivity">
+
+    <!-- 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:text="〈       기업 회원가입"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 스크롤뷰 -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/sign_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <!-- 아이디 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) yesable123"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- 비밀번호 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="비밀번호 (8~15자 영문+숫자+특수문자 조합)"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+            <!-- 비밀번호 재입력 -->
+            <EditText
+                android:id="@+id/editTextPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="비밀번호 재입력"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+            <!-- 사업자 등록 번호 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사업자 등록 번호 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextBusinessNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="사업자 등록 번호를 입력해주세요"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- 기업명 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업명 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) YESABLE"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <!-- 대표자명 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대표자명 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextRepresentativeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) 홍길동"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <!-- 기업 주소 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업 주소 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextCompanyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) 서울특별시 강남구 테헤란로"
+                android:inputType="textPostalAddress"
+                android:minHeight="48dp" />
+
+            <!-- 기업 형태 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업 형태 *"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCompanyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"/>
+
+
+            <!-- 사업 분야 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사업 분야 *"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerBusinessArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"/>
+
+
+            <!-- 담당자 성함 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담당자 성함 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextManagerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="담당자 성함을 입력해주세요"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <!-- 담당자 연락처 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담당자 연락처 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextManagerContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) 02-1234-5678"
+                android:inputType="phone"
+                android:minHeight="48dp" />
+
+            <!-- 담당자 이메일 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담당자 이메일 *"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextManagerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="예) yesable123@gmail.com"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 회원가입 버튼 -->
+    <Button
+        android:id="@+id/sign_button"
+        style="@style/ButtonStyleColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="회원가입"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment9">
+
+    <!-- 학력 입력 폼 -->
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="16dp"
+        android:text="학력을 입력해주세요"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/educationFormLayout"
+        android:layout_width="370dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/msg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/degreeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/degree_array"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:entries="@array/status_array"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/schoolNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="학교명을 입력해주세요"
+            android:minHeight="56dp"
+            android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/majorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전공을 입력해주세요"
+            android:minHeight="56dp"
+            android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/startYearEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="입학년도"
+                android:minHeight="56dp"
+                android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="~" />
+
+            <EditText
+                android:id="@+id/endYearEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="졸업년도"
+                android:minHeight="56dp"
+                android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="취소"
+                android:textColor="@android:color/white"
+                android:minHeight="48dp"
+                android:minWidth="64dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="저장"
+                android:textColor="@android:color/white"
+                android:minHeight="48dp"
+                android:minWidth="64dp"
+                android:padding="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 학력 목록 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/educationRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/educationFormLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/addEducationButton"
+        android:visibility="gone" />
+
+    <Button
+    android:id="@+id/addEducationButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:text="+ 학력 추가"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/educationRecyclerView" />
+
+    <Button
+        android:id="@+id/ob_button"
+        style="@style/ButtonStyleColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="계속하기"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

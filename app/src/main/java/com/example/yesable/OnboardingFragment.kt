@@ -2,6 +2,7 @@ package com.example.yesable
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,8 +27,12 @@ class OnboardingFragment : Fragment() {
             4 -> R.layout.fragment_onboarding5
             5 -> R.layout.fragment_onboarding6
             6 -> R.layout.fragment_onboarding7
+            7 -> R.layout.fragment_onboarding8 //추가
+            8 -> R.layout.fragment_onboarding9
+            9 -> R.layout.fragment_onboarding10
             else -> R.layout.fragment_onboarding1
         }
+        Log.d("OnboardingFragment", "Inflating layout for page number: $pageNumber")
 
         return inflater.inflate(layoutResId, container, false)
     }
@@ -47,6 +52,8 @@ class OnboardingFragment : Fragment() {
                     val intent = Intent(activity, StartActivity::class.java)
                     startActivity(intent)
                     activity?.finish()
+                }else->{
+                    Log.d("OnboardingFragment", "Unknown page number: $pageNumber")
                 }
             }
         }

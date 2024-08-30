@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yesable"
         tools:targetApi="31">
+
+<!--        TODO: 개인회원과 기업회원 액티비티 통일화-->
         <activity
             android:name=".dlelelel"
             android:exported="false"
@@ -24,6 +26,12 @@
             android:name=".IndividualMemberRegistrationActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CorporateMemberRegistrationActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"
+             />
+
         <activity
             android:name=".OnboardingPagerAdapter"
             android:exported="false"
