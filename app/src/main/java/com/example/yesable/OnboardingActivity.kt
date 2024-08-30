@@ -1,6 +1,9 @@
 package com.example.yesable
 
+<<<<<<< HEAD
+=======
 import android.content.Intent
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
 import android.os.Bundle
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -57,8 +60,12 @@ class OnboardingActivity : AppCompatActivity() {
         builder.setTitle("그만하고 싶으신가요?")
         builder.setMessage("지금까지 입력된 정보는 저장되지 않아요.\n마이페이지>이력서 관리에서\n다시 이용하실 수 있습니다.")
         builder.setPositiveButton("확인") { dialog, _ ->
+<<<<<<< HEAD
+            finish()
+=======
             val intent = Intent(this, StartActivity::class.java)
             startActivity(intent)
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
         }
         builder.setNegativeButton("취소") { dialog, _ ->
             dialog.dismiss()

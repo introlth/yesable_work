@@ -19,6 +19,12 @@
     <string name="title_activity_onboarding_pager_adapter">OnboardingPagerAdapter</string>
     <string name="title_activity_onboarding1">OnboardingActivity1</string>
     <string name="prompt_year">취득년도</string>
+<<<<<<< HEAD
+    <string name="title_activity_recruitment_detail1">Recruitment_Detail_Activity1</string>
+    <string name="title_activity_apply_list">Apply_List_Activity</string>
+
+=======
 
     >>>>>>> 4f3811607a4e5dbbe8df088fe15bdd7658f1809c
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
 </resources>

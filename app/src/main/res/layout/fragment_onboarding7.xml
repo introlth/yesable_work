@@ -58,6 +58,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chip1" />
 
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/ob_button"-->
+<!--        style="@style/ButtonStyleColor"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:text="계속하기"-->
+<!--        android:textSize="18sp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/chip2" />-->
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/ob_button_hidden"-->
+<!--        style="@style/ButtonStyleColor"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:background="#DADADA"-->
+<!--        android:shadowColor="#FFFEFE"-->
+<!--        android:text="계속하기"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorLink="@color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/chip2"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
     <android.widget.Button
         android:id="@+id/ob_button"
         style="@style/ButtonStyleColor"

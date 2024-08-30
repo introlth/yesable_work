@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
+=======
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
     namespace = "com.example.yesable"
     compileSdk = 34
 
@@ -69,6 +78,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.car.ui.lib)
+<<<<<<< HEAD
+    implementation(libs.androidx.gridlayout)
+=======
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -77,9 +90,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+<<<<<<< HEAD
+=======
     implementation(libs.material)
 
 
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
     val nav_version = "2.7.7"
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")

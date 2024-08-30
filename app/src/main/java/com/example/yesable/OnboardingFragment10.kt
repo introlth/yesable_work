@@ -46,9 +46,17 @@ class OnboardingFragment10 : Fragment() {
             if (currentItem < totalItems - 1) {
                 viewPager.currentItem = currentItem + 1
             } else {
+<<<<<<< HEAD
+                // 마지막 페이지인 경우 추가 동작을 여기에 작성
+                // 예: 메인 액티비티로 이동
+                val intent = Intent(activity, MainActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+=======
                 val intent = Intent(activity, G_Login_Activity::class.java)
                 startActivity(intent)
                 activity.finish()
+>>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
             }
         }
     }
