@@ -20,8 +20,8 @@ public class RegistrationSuccessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // StartActivity로 이동하는 Intent 생성
-                Intent intent = new Intent(RegistrationSuccessActivity.this, StartActivity.class);
-                startActivity(intent);  // StartActivity로 이동
+                Intent intent = new Intent(RegistrationSuccessActivity.this, LoginActivity.class);
+                startActivity(intent);
                 finish();  // 현재 액티비티 종료
             }
         });

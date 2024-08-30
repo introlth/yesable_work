@@ -13,10 +13,17 @@
         android:theme="@style/Theme.Yesable"
         tools:targetApi="31">
         <activity
+            android:name=".dlelelel"
+            android:exported="false"
+            android:label="@string/title_activity_dlelelel"
+            android:theme="@style/Theme.Yesable" />
+        <activity
+            android:name=".deleleleel"
+            android:exported="false" />
+        <activity
             android:name=".IndividualMemberRegistrationActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".OnboardingPagerAdapter"
             android:exported="false"
@@ -57,9 +64,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrationSuccessActivity"/>
-
-
+        <activity android:name=".RegistrationSuccessActivity" />
     </application>
 
 </manifest>
