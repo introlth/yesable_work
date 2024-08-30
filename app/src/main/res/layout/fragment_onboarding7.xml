@@ -60,10 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chip1" />
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
 <!--    <android.widget.Button-->
 <!--        android:id="@+id/ob_button"-->
 <!--        style="@style/ButtonStyleColor"-->
@@ -117,9 +113,5 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<<<<<<< HEAD
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
 
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe

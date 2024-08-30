@@ -23,11 +23,9 @@ class StartActivity : ComponentActivity() {
         // 게스트 버튼 화면 전환 -> 일반회원 메인 화면 이동
         val main_button = findViewById<TextView>(R.id.main_button)
         main_button.setOnClickListener {
-<<<<<<< HEAD
-            val intent = Intent(this, OnboardingActivity::class.java)
-=======
+
             val intent = Intent(this, G_Main_Activity::class.java)
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
+
             startActivity(intent)
         }
 

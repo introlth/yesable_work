@@ -45,22 +45,15 @@ class OnboardingFragment : Fragment() {
 
         obButton.setOnClickListener {
             when (pageNumber) {
-<<<<<<< HEAD
-                in 0..9 -> {
-                    (activity as? OnboardingActivity)?.viewPager2?.currentItem = pageNumber + 1
-                }
-                10 -> {
-                    val intent = Intent(activity, StartActivity::class.java)
-=======
                 in 0..8 -> {
                     (activity as? OnboardingActivity)?.viewPager2?.currentItem = pageNumber + 1
                 }
                 9 -> {
                     val intent = Intent(activity, G_Main_Activity::class.java)
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
                     startActivity(intent)
                     activity?.finish()
-                }else->{
+                }
+                else -> {
                     Log.d("OnboardingFragment", "Unknown page number: $pageNumber")
                 }
             }

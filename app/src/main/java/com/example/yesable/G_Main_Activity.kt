@@ -16,7 +16,7 @@ class G_Main_Activity : AppCompatActivity() {
 
         val recruit_list = findViewById<ImageView>(R.id.main_image1)
         recruit_list.setOnClickListener {
-            val intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(this, Recruitment_Detail_Activity::class.java)
             startActivity(intent)
         }
 

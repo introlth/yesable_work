@@ -13,19 +13,17 @@
         android:theme="@style/Theme.Yesable"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".Apply_List_Activity"
             android:exported="true"
             android:theme="@style/Theme.Yesable" />
         <activity
             android:name=".Recruitment_Detail_Activity"
             android:exported="true"
-            android:theme="@style/Theme.Yesable" /> <!-- TODO: 개인회원과 기업회원 액티비티 통일화 -->
-=======
+            android:theme="@style/Theme.Yesable" />
+        <activity
             android:name=".G_Main_Activity"
             android:exported="false" />
         <!-- TODO: 개인회원과 기업회원 액티비티 통일화 -->
->>>>>>> 3450c5d65e948edd8115c0ed5318a50d24dce1fe
         <activity
             android:name=".IndividualMemberRegistrationActivity"
             android:exported="false"
