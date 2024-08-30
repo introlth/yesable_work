@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnboardingFragment7">
+    tools:context=".OnboardingFragment5">
 
     <TextView
         android:id="@+id/msg"
@@ -20,14 +20,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.chip.Chip
         android:id="@+id/chip1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="19dp"
         android:checkable="true"
         android:text="신입이에요"
         android:textAlignment="center"
@@ -46,7 +45,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginBottom="278dp"
+        android:layout_marginBottom="225dp"
         android:checkable="true"
         android:text="근무 경험이 있어요"
         android:textAlignment="center"
@@ -56,7 +55,6 @@
         app:chipSurfaceColor="#F4EEEE"
         app:layout_constraintBottom_toTopOf="@+id/ob_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chip1" />
 
@@ -105,13 +103,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="3dp"
         android:text="계속하기"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip2" />
 
+<<<<<<< HEAD
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> e68715f3cafc505dd1b8580c622e1fe7aee76642

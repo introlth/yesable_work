@@ -48,7 +48,7 @@
             <ImageView
                 android:id="@+id/main_image1"
                 android:layout_width="wrap_content"
-                android:layout_height="398dp"
+                android:layout_height="441dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
