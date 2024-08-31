@@ -22,6 +22,11 @@ class Recruitment_Detail_Activity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recruitment_detail)
 
+        val backbutton = findViewById<TextView>(R.id.back_button)
+        backbutton.setOnClickListener {
+            finish()
+        }
+
         val logoImageView1 = findViewById<ImageView>(R.id.imageView1)
         logoImageView1.setImageResource(R.drawable.logo)
 

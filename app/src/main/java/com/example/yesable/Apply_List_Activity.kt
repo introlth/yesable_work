@@ -26,6 +26,12 @@ class Apply_List_Activity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.apply_list)
 
+        val backbutton = findViewById<TextView>(R.id.back_button)
+        backbutton.setOnClickListener {
+            finish()
+        }
+
+
         val logoImageView6 = findViewById<ImageView>(R.id.apply_button)
         logoImageView6.setImageResource(R.drawable.apply_button)
 

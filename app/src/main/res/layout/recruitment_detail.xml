@@ -61,7 +61,8 @@
                 android:inputType="text"
                 android:text="(주) Yesable"
                 android:textColor="#0000FF"
-                android:textSize="14sp" />
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/text2"
