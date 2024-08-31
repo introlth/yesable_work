@@ -1,12 +1,10 @@
 package com.example.yesable
 
-<<<<<<< HEAD
+
 
 import android.content.Intent
 
-=======
-import android.content.Intent
->>>>>>> e68715f3cafc505dd1b8580c622e1fe7aee76642
+
 import android.os.Bundle
 import android.widget.ProgressBar
 import android.widget.TextView

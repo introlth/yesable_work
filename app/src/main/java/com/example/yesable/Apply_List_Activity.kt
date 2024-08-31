@@ -29,9 +29,9 @@ class Apply_List_Activity : ComponentActivity() {
         val logoImageView6 = findViewById<ImageView>(R.id.apply_button)
         logoImageView6.setImageResource(R.drawable.apply_button)
 
-        val apply_button = findViewById<ImageButton>(R.id.apply_button)
+        val apply_button = findViewById<ImageView>(R.id.apply_button)
         apply_button.setOnClickListener {
-            val intent = Intent(this, Recruitment_Detail_Activity::class.java)
+            val intent = Intent(this, ApplicationFormActivity::class.java)
             startActivity(intent)
         }
     }

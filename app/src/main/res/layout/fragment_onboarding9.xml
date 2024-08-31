@@ -123,14 +123,13 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/cancelButton"
+                style="@style/ButtonStyleGray"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button"
                 android:text="취소"
-                android:textColor="@android:color/white"
                 android:minHeight="48dp"
                 android:minWidth="64dp"
                 android:padding="12dp" />

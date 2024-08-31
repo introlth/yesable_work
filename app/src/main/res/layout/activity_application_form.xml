@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApplicationFormActivity"> //Activity 연결 예정
+    tools:context=".ApplicationFormActivity">
 
-    <!-- Toolbar with back button and title -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        android:layout_marginBottom="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,16 +31,16 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- ScrollView to enable scrolling on smaller screens -->
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="395dp"
+        android:layout_height="475dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ll_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -51,45 +51,45 @@
                 android:id="@+id/tv_resume_title_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
                 android:text="이력서 제목 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/et_resume_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="이력서 제목"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="장애를 극복하여 긍정적인 변화를 이끈 사람"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintTop_toBottomOf="@+id/tv_resume_title_label"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_resume_title_label" />
 
             <!-- AI 자소서 작성 안내 -->
             <TextView
                 android:id="@+id/tv_ai_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
                 android:text="아래 정보가 AI 자소서 작성에 활용돼요"
-                android:textSize="17dp"
                 android:textColor="#888BF4"
+                android:textSize="17dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/et_resume_title"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_resume_title" />
 
 
             <!-- 회원 정보 섹션 -->
@@ -97,58 +97,59 @@
                 android:id="@+id/tv_member_info_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="회원 정보 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/tv_ai_info"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_ai_info" />
 
             <TextView
                 android:id="@+id/tv_member_info_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="성별·나이 남자 23세 (2000년생)\n연락처 010-1234-5678\n이메일 yesable@gmail.com\n장애 유형 시각장애"
-                android:textSize="14sp"
-                android:background="@drawable/edit_text_background"
-
-                app:layout_constraintTop_toBottomOf="@+id/tv_member_info_label"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
+
+                android:background="@drawable/edit_text_background"
+                android:text="성별·나이\t\t\t 남자 23세 (2000년생)\n연락처 \t\t\t\t\t 010-1234-5678\n이메일 \t\t\t\t\t yesable@gmail.com\n장애 유형\t\t\t 시각장애"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_member_info_label" />
 
             <!-- 경력 선택 섹션 -->
             <TextView
                 android:id="@+id/tv_career_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="경력 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/tv_member_info_details"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_member_info_details" />
 
-                <RadioGroup
-                    android:id="@+id/rg_career"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_career_label"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rg_career"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_career_label">
 
-                    <RadioButton
-                        android:id="@+id/rb_new"
-                        android:layout_width="wrap_content"
+                <RadioButton
+                    android:id="@+id/rb_new"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="true"
                     android:text="신입" />
 
                 <RadioButton
@@ -162,138 +163,137 @@
                 android:id="@+id/et_career_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background"
                 android:hint="관련 업무 경험을 설명해주세요"
                 android:inputType="textMultiLine"
                 android:minHeight="150dp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintTop_toBottomOf="@+id/rg_career"
-                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_career" />
 
             <!-- 학력 섹션 -->
             <TextView
                 android:id="@+id/tv_education_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="학력 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/et_career_details"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/et_career_details" />
 
             <TextView
                 android:id="@+id/tv_education_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="대학원 박사 서울대학교 컴퓨터공학과\n대학원 석사 서울대학교 컴퓨터공학과\n대학교 예서블대학교 컴퓨터공학과\n고등학교 하나고등학교"
-                android:textSize="14sp"
-                android:background="@drawable/edit_text_background"
-
-                app:layout_constraintTop_toBottomOf="@+id/tv_education_label"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
+
+                android:background="@drawable/edit_text_background"
+                android:text="대학원\t\t\t\t\t 박사 서울대학교 컴퓨터공학과\n대학원\t\t\t\t\t 석사 서울대학교 컴퓨터공학과\n대학교 \t\t\t\t\t 예서블대학교 컴퓨터공학과\n고등학교\t\t\t\t 하나고등학교"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_education_label" />
 
             <!-- 자격증 섹션 -->
             <TextView
                 android:id="@+id/tv_certification_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="자격증 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/tv_education_details"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_education_details" />
 
             <TextView
                 android:id="@+id/tv_certification_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background"
                 android:text="컴퓨터 활용 능력 1급\n한국사 능력 검정시험 3급"
                 android:textSize="14sp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintTop_toBottomOf="@+id/tv_certification_label"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_certification_label" />
 
             <!-- 자기소개서 섹션 -->
             <TextView
                 android:id="@+id/tv_self_introduction_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="자기소개서 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/tv_certification_details"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_certification_details" />
 
             <EditText
                 android:id="@+id/et_self_introduction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background"
                 android:hint="AI가 작성한 자소서 내용이 노출됩니다"
                 android:inputType="textMultiLine"
                 android:minHeight="300dp"
-                android:background="@drawable/edit_text_background"
-                app:layout_constraintTop_toBottomOf="@+id/tv_self_introduction_label"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="8dp" />
-
-            <!-- 완료 및 취소 버튼 -->
-            <LinearLayout
-                android:id="@+id/ll_buttons"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/et_self_introduction"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp">
-
-                <Button
-                    android:id="@+id/btn_cancel"
-                    style="@style/ButtonStyleColor"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="취소" />
-
-                <Button
-                    android:id="@+id/btn_complete"
-                    style="@style/ButtonStyleColor"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="완료하기" />
-            </LinearLayout>
-
+                app:layout_constraintTop_toBottomOf="@+id/tv_self_introduction_label" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <!-- 완료 및 취소 버튼 -->
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView">
+
+        <android.widget.Button
+            android:id="@+id/btn_cancel"
+            style="@style/ButtonStyleGray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="취소" />
+
+        <android.widget.Button
+            android:id="@+id/btn_complete"
+            style="@style/ButtonStyleColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="완료하기" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

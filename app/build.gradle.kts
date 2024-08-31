@@ -1,22 +1,18 @@
-<<<<<<< HEAD
+
 
 import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
 
 
-=======
-import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
 
->>>>>>> e68715f3cafc505dd1b8580c622e1fe7aee76642
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-<<<<<<< HEAD
 
-=======
->>>>>>> e68715f3cafc505dd1b8580c622e1fe7aee76642
+
+
     namespace = "com.example.yesable"
     compileSdk = 34
 
@@ -93,10 +89,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-<<<<<<< HEAD
 
-=======
->>>>>>> e68715f3cafc505dd1b8580c622e1fe7aee76642
+
+
     implementation(libs.material)
 
     val nav_version = "2.7.7"
