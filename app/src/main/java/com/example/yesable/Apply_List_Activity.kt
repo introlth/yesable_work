@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -24,6 +25,9 @@ class Apply_List_Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.apply_list)
+
+        val logoImageView6 = findViewById<ImageView>(R.id.apply_button)
+        logoImageView6.setImageResource(R.drawable.apply_button)
 
         val apply_button = findViewById<ImageButton>(R.id.apply_button)
         apply_button.setOnClickListener {

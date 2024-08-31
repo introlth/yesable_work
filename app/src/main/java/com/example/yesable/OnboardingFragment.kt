@@ -51,7 +51,11 @@ class OnboardingFragment : Fragment() {
                 9 -> {
                     val intent = Intent(activity, G_Main_Activity::class.java)
                     startActivity(intent)
-                }else->{
+
+                    activity?.finish()
+                }
+                else -> {
+
                     Log.d("OnboardingFragment", "Unknown page number: $pageNumber")
                 }
             }

@@ -19,7 +19,9 @@
         <activity
             android:name=".Recruitment_Detail_Activity"
             android:exported="true"
+
             android:theme="@style/Theme.Yesable" /> <!-- TODO: 개인회원과 기업회원 액티비티 통일화 -->
+
         <activity
             android:name=".G_Main_Activity"
             android:exported="false" />
