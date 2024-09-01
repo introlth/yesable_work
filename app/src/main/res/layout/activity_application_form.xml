@@ -254,9 +254,20 @@
                 android:hint="AI가 작성한 자소서 내용이 노출됩니다"
                 android:inputType="textMultiLine"
                 android:minHeight="300dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon_switch"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_self_introduction_label" />
+            <ImageView
+                android:id="@+id/icon_switch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/stardust_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_self_introduction_label" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

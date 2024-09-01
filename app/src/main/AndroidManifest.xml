@@ -20,6 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".ApplicationFormActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".Apply_List_Activity"
