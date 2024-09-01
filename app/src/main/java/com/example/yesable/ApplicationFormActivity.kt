@@ -10,6 +10,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.app.AlertDialog
+import android.os.Handler
+import android.os.Looper
+import android.view.LayoutInflater
+
 
 //class ApplicationFormActivity : AppCompatActivity() {
 //    override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,26 +75,61 @@ class ApplicationFormActivity : AppCompatActivity() {
 //        editText.setText(initialText)
 
         // 아이콘 전환 로직
+//        iconSwitch.setOnClickListener {
+//            when (iconState) {
+//                0 -> {
+//                    // 첫 번째 클릭: 로딩 아이콘으로 변경
+//                    iconSwitch.setImageResource(R.drawable.loading_icon)
+//                    iconState = 1
+//                }
+//                1 -> {
+//                    // 두 번째 클릭: back.png 아이콘으로 변경 및 텍스트 변경
+//                    editText.setText(enhancedText)
+//                    iconSwitch.setImageResource(R.drawable.back)
+//                    iconState = 2
+//                }
+//                2 -> {
+//                    // 세 번째 클릭: 초기 아이콘 및 초기 텍스트로 복원
+//                    editText.setText(initialText)
+//                    iconSwitch.setImageResource(R.drawable.stardust_icon)
+//                    iconState = 0
+//                }
+//            }
+//        }
+//    }
+//}
+
+// 아이콘 전환 로직
         iconSwitch.setOnClickListener {
-            when (iconState) {
-                0 -> {
-                    // 첫 번째 클릭: 로딩 아이콘으로 변경
-                    iconSwitch.setImageResource(R.drawable.loading_icon)
-                    iconState = 1
-                }
-                1 -> {
-                    // 두 번째 클릭: back.png 아이콘으로 변경 및 텍스트 변경
+            if (iconState == 0) {
+                showLoadingDialog {
+                    // 1초 후에 아이콘과 텍스트 변경
                     editText.setText(enhancedText)
                     iconSwitch.setImageResource(R.drawable.back)
-                    iconState = 2
+                    iconState = 1
                 }
-                2 -> {
-                    // 세 번째 클릭: 초기 아이콘 및 초기 텍스트로 복원
-                    editText.setText(initialText)
-                    iconSwitch.setImageResource(R.drawable.stardust_icon)
-                    iconState = 0
-                }
+            } else {
+                // 되돌아가기 상태로
+                editText.setText(initialText)
+                iconSwitch.setImageResource(R.drawable.stardust_icon)
+                iconState = 0
             }
         }
+    }
+
+    private fun showLoadingDialog(onComplete: () -> Unit) {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.loading_popup, null)
+        val dialogBuilder = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+        val alertDialog = dialogBuilder.create()
+
+        alertDialog.show()
+
+        // 1초 후에 팝업 닫기 및 콜백 실행
+        Handler(Looper.getMainLooper()).postDelayed({
+            alertDialog.dismiss()
+            onComplete()
+        }, 1000)
     }
 }
